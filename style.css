@@ -1,0 +1,132 @@
+::-webkit-scroll-bar{
+  width:0;
+  }
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'popins',sans-serif;
+  }
+body{
+  min-height: 100vh;
+  background-color: #9A00B9;
+  justify-content: center;
+  position: relative;
+}
+.displayKhand{
+  font-size: 17px;
+  display: center;
+#  border: 2px solid red;
+  width: 320px;
+  height: 55px;
+  padding: 14px;
+  border-radius: 16px;
+  margin: 5px auto;
+  background-color: whitesmoke;
+  font-weight: 600;
+  align-items: center;
+  justify-content: space-between;
+  overflow: scroll;
+}
+.header{
+  margin: 10px auto;
+  background-color: #fff;
+  height: 55px;
+  width:288px;
+  padding: 16px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: scroll;
+}
+.selected{
+  color: #9A00B9;
+  font-weight: 600;
+}
+.icon{
+  font-size: 35px;
+  color: #9A00B9;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.icon.open{
+  transform: rotate(180deg);
+}
+.menu{
+  background-color: #fff;
+  position: absolute;
+  top: 128px;
+  width: 288px;
+  border-radius: 10px;
+  padding: 16px;
+  transition: 0.3s;
+  transform: scale(0);
+  transform-origin: top-right;
+  pointer-events: none;
+  margin-left: 33px;
+}
+.menu.open{
+  transform: scale(1);
+  pointer-events: auto;
+}
+.menu-arrow{
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  top:-8px;
+  transform: rotate(45deg);
+  right: 22px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.search-box{
+  height: 45px;
+  width: 100%;
+  position: relative;
+}
+input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: solid 3px #8C8EA7;
+  color: 8C8EA7;
+  padding-left: 20px;
+  padding-right: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+input-focus{
+  background-color: 9A00B9;
+  color: 9A00B9;
+}
+.wall{
+  margin: 10px auto;
+  height: 3px;
+  width: 100%;
+  background-color: #A3A5B7;
+  border-radius: 6px;
+}
+.results{
+  list-style: none;
+  max-height: 230px;
+  overflow: scroll;
+  }
+li{
+  height: 50px;
+  line-height: 50px;
+  padding-left: 10px;
+  border-radius: 10px;
+  color: #9A00B9;
+  font-weight: 500;
+  transition: 0.3s;
+  margin-bottom: 6px;
+  overflow: hidden;
+}
+li:last-child{
+  margin-bottom: 0;
+}
+li:hover{
+  background-color: #D0D2E4;
+}
