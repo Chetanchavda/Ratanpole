@@ -17,7 +17,7 @@ body{
   font-size: 17px;
   display: center;
   width: 320px;
-  height: 55px;
+  height: 155px;
   padding: 14px;
   border-radius: 16px;
   margin: 5px auto;
@@ -63,7 +63,7 @@ body{
   transform: scale(0);
   transform-origin: top-right;
   pointer-events: none;
-  margin-left: 33px;
+  margin-left: 349px;
 }
 .menu.open{
   transform: scale(1);
