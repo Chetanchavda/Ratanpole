@@ -102,7 +102,7 @@ input-focus{
 }
 .wall{
   margin-left: 348px;
-  margin: 10px auto;
+  margin-top: 10px;
   height: 3px;
   width: 100%;
   background-color: #A3A5B7;
